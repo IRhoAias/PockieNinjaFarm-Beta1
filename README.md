@@ -8,6 +8,12 @@ Welcome to the **PockieNinja Farm Macro** repository! This project is an automat
 - **Slot Machine Farm**: Slot Machine Farm macro.
 - **Open Scroll macro**: Scroll Opener marco if you have many scrolls in your bag.
 
+## ⚙️ Requirements
+- **System**: Tested And Working in Windows 8/10/11
+- **VCRedist**: You Need [This Libraries](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for Working
+- **Python**: [Direct Link](https://www.python.org/downloads/)
+
+  
 ## 🎥 Showcase
 Watch our YouTube video to see the bot in action. Click on the image below to view the demo:
 
