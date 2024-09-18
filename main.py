@@ -15,8 +15,12 @@ STANDARD_PADDING_X=15
 STANDARD_PADDING_Y=3
 VERSION="2.0"
 
-FILE = open("account.txt", "r")
-ACCOUNT = FILE.read().splitlines()
+try:
+    with open("account.txt", "r") as file:
+        ACCOUNT = file.read().splitlines()
+except FileNotFoundError:
+    messagebox.showerror("Error", "The file 'account.txt' does not exist.")
+    ACCOUNT = []  # Assign an empty list or handle the flow as you prefer
 
 def set_style():
     sv_ttk.set_theme("dark")
