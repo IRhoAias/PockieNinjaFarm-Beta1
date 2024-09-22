@@ -81,10 +81,12 @@ class PockieNinjaValhallaBot(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.chromium.launch(headless=self.headless)
+                self.browser = self.p.firefox.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
+                time.sleep(1.0)
                 self.page.goto("https://pockieninja.online/")
+                time.sleep(1.5)
                 print("OPENED LINK")
                 self.set_dungeon_info()
                 print(f"GAME SPEED : {self.game_speed}")
@@ -338,10 +340,12 @@ class PockieNinjaStandardAreaFarm(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.chromium.launch(headless=self.headless)
+                self.browser = self.p.firefox.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
+                time.sleep(1.0)
                 self.page.goto("https://pockieninja.online/")
+                time.sleep(1.5)
                 self.page.evaluate(JAVASCRIPT_CODE_SH)
                 print("OPENED LINK")
                 self.page.evaluate(JAVASCRIPT_SPEED_CONFIG.replace("1.0", self.game_speed))
@@ -487,10 +491,12 @@ class PockieNinjaSlotMachineFarm(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.chromium.launch(headless=self.headless)
+                self.browser = self.p.firefox.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
+                time.sleep(1.0)
                 self.page.goto("https://pockieninja.online/")
+                time.sleep(1.5)
                 print("OPENED LINK")
                 print(f"GAME SPEED : {self.game_speed}")
                 self.page.evaluate(JAVASCRIPT_CODE_SH)
@@ -561,7 +567,12 @@ class PockieNinjaSlotMachineFarm(PockieNinjaFarmBot):
 
         ## CHECK IF SLOT MACHINE STILL OPEN
         if self.page.locator(f"img[{SLOT_MACHINE_FRAME_OPEN}]").count() == 0:
-            self.page.locator(f"img[{SLOT_MACHINE_ICON_SRC}]").click()        
+            self.page.evaluate('''
+            const element = document.querySelector("img[src='https://pockie-ninja-assets.sfo3.cdn.digitaloceanspaces.com/pockie-ninja-assets/public/ui/SlotMachine/icon.png']");
+            const rect = element.getBoundingClientRect();
+            element.click(rect.left + 10, rect.top + 16);
+            ''')
+ 
         self.page.locator(f"img[{SLOT_MACHINE_CHALLENGE_BTN_SRC}]").locator('..').click()
         self.start_fight_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         time.sleep(WINDOW_WAIT_STANDARD_DELAY)
@@ -615,10 +626,12 @@ class PockieNinjaScrollOpener(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.chromium.launch(headless=self.headless)
+                self.browser = self.p.firefox.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
+                time.sleep(1.0)
                 self.page.goto("https://pockieninja.online/")
+                time.sleep(1.5)
                 print("OPENED LINK")
                 self.relog()
                 self.close_fight_page()
