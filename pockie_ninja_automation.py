@@ -81,7 +81,7 @@ class PockieNinjaValhallaBot(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.firefox.launch(headless=self.headless)
+                self.browser = self.p.chromium.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
                 time.sleep(1.0)
@@ -340,7 +340,7 @@ class PockieNinjaStandardAreaFarm(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.firefox.launch(headless=self.headless)
+                self.browser = self.p.chromium.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
                 time.sleep(1.0)
@@ -491,7 +491,7 @@ class PockieNinjaSlotMachineFarm(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.firefox.launch(headless=self.headless)
+                self.browser = self.p.chromium.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
                 time.sleep(1.0)
@@ -626,7 +626,7 @@ class PockieNinjaScrollOpener(PockieNinjaFarmBot):
     def main_loop(self):
         try:
             with sync_playwright() as self.p:
-                self.browser = self.p.firefox.launch(headless=self.headless)
+                self.browser = self.p.chromium.launch(headless=self.headless)
                 print("OPENED BROWSER")
                 self.page = self.browser.new_page()
                 time.sleep(1.0)
