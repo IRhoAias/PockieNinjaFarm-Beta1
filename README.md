@@ -10,6 +10,7 @@ Welcome to the **PockieNinja Farm Macro** repository! This project is an automat
 
 ## ⚙️ Requirements
 - **System**: Tested And Working in Windows 8/10/11
+- **Ram**: Minimun 10gb / Recomended 16gb
 - **VCRedist**: You Need [This Libraries](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for Working
 - **Python**: [Direct Link](https://www.python.org/downloads/)
 
