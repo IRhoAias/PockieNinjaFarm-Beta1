@@ -1,6 +1,6 @@
 # 🌾 PockieNinja Farm Macro 🌾
 
-Welcome to the **PockieNinja Farm Macro** repository! This project is an automation tool designed for the new PockieNinja server at [pockieninja.online](https://pockieninja.online). This macro automates farming in dungeons, regular area mobs, Slot Machines. It can run indefinitely, providing a seamless farming experience.
+Welcome to the **PockieNinja Farm Macro** repository! This project is an automation tool designed for the new PockieNinja server at [Pockie Ninja](https://pockieninja.online). This macro automates farming in dungeons, regular area mobs, Slot Machines. It can run indefinitely, providing a seamless farming experience.
 
 ## 🚀 Features
 - **Dungeon Farming**: Automates Valhalla Dungeon for level 11 and 16.
