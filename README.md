@@ -20,7 +20,7 @@ Welcome to the **PockieNinja Farm Macro** repository! This project is an automat
 ## 🎥 Showcase
 Watch our YouTube video to see the bot in action. Click on the image below to view the demo:
 
-[![PockieNinja Farm Bot Demo](https://i.imgur.com/UoWFY6Z.png)](https://www.youtube.com/watch?v=BzPv_OCpmD0)
+[![PockieNinja Farm Bot Demo](https://i.imgur.com/UoWFY6Z.png)](https://youtu.be/_kFJRLkGzNY)
 
 For more updates and details, we can help you on the official [Discord](https://discord.gg/gCx5hCZPuv) of the Server.
 
