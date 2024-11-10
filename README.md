@@ -10,10 +10,11 @@ Welcome to the **PockieNinja Farm Macro** repository! This project is an automat
 
 ## ⚙️ Requirements
 - **System**: Tested And Working in Windows 8/10/11
-- **Ram**: Minimun 10gb / Recomended 16gb
+- **Ram**: Minimun 10GB / Recomended 16GB
 - **VCRedist**: You Need [This Libraries](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for Working
 - **Python**: [Web Direct Link](https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe) This is 3.13.0
-- **Python**: ONLY IF THE WEB DONT WORK [Microsoft Store](https://apps.microsoft.com/detail/9pnrbtzxmb4z?hl=en-US&gl=US)
+> [!IMPORTANT]  
+> If The Link Above Dont Work try [Python from Microsoft Store](https://apps.microsoft.com/detail/9pnrbtzxmb4z?hl=en-US&gl=US)
 
   
 ## 🎥 Showcase
@@ -21,6 +22,6 @@ Watch our YouTube video to see the bot in action. Click on the image below to vi
 
 [![PockieNinja Farm Bot Demo](https://i.imgur.com/UoWFY6Z.png)](https://www.youtube.com/watch?v=BzPv_OCpmD0)
 
-For more updates and detailed videos, please refer to the PockieNinja Playlist on our YouTube channel.
+For more updates and details, we can help you on the official [Discord](https://discord.gg/gCx5hCZPuv) of the Server.
 
 ---
