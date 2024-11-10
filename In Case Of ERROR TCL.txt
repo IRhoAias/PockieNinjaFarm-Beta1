@@ -1,0 +1,9 @@
+Windows+R
+
+First
+TCL_LIBRARY
+C:\Users\%username%\AppData\Local\Programs\Python\Python313\tcl\tcl8.6
+
+Second
+TK_LIBRARY
+C:\Users\%username%\AppData\Local\Programs\Python\Python313\tcl\tk8.6
