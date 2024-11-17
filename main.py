@@ -8,7 +8,7 @@ from pockie_ninja_automation import *
 from src import *
 
 MAIN_MENU_WINDOW_SIZE="440x330"
-STANDARD_AREA_FARM_WINDOW_SIZE="440x260"
+STANDARD_AREA_FARM_WINDOW_SIZE="440x280"
 SLOT_MACHINE_FARM_WINDOW_SIZE="440x220"
 SCROLL_BOT_WINDOW_SIZE="440x230"
 STANDARD_PADDING_X=15
@@ -272,7 +272,7 @@ class RegularAreaFarm(tk.Frame):
         self.headless_checkbox.grid(row=5, column=1, sticky="ew", padx=STANDARD_PADDING_X, pady=STANDARD_PADDING_Y)
         self.game_speed_label.grid(row=4, column=0, sticky="ew", padx=STANDARD_PADDING_X, pady=STANDARD_PADDING_Y)
         self.game_speed_slider.grid(row=4, column=1, sticky="ew", padx=STANDARD_PADDING_X, pady=STANDARD_PADDING_Y)
-        self.start_button.grid(row=5, column=1, columnspan=2, sticky="ew", pady=STANDARD_PADDING_Y)
+        self.start_button.grid(row=6, column=1, columnspan=2, sticky="ew", pady=STANDARD_PADDING_Y)
 
         if len(ACCOUNT) == 2:
             self.username_entry.insert(0, ACCOUNT[0])
